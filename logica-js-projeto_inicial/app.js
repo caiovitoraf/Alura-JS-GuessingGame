@@ -1,7 +1,9 @@
 alert ('Bem-vindo ao Jogo do Caio')
 
+var limite = 100
+
 var array = [];
-for (var i = 0; i <= 100; i++) {
+for (var i = 0; i <= limite; i++) {
     array.push(i);
 
 };
@@ -18,7 +20,7 @@ var indiceAleatorio = SelecionarIndiceAleatorio(array);
 let palavraTentativa = tentativas > 1 ? 'tentativa' : 'tentativas'
 
 while (true) {
-    var chute = parseInt(prompt('Escolha um número de 0 a 100'));
+    var chute = parseInt(prompt(`Escolha um número de 0 a ${limite}`));
     tentativas++;
 
     if (chute === indiceAleatorio) {
